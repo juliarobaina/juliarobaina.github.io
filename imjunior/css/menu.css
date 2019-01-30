@@ -47,11 +47,25 @@ nav a:focus,nav a:active{
 	text-decoration: underline;
 }
 
+#sss{
+	margin: 0 auto;
+}
+
 @media(max-width: 767px){
 	.blocoDrop{
 		position: static !important;
 		transform: translate3d(-5px,-5px,0px) !important;
 		text-align: center;
+	}
+
+	#sss{
+		overflow-y: scroll !important;
+    	overflow-x: hidden;
+    	height: 250px !important;
+	}
+
+	#navbarSite ul{
+		font-size: 15px;
 	}
 }
 
@@ -59,4 +73,28 @@ nav a:focus,nav a:active{
 	.blocoDrop{
 		transform: translate3d(0px, 58px, 0px) !important;
 	}
+}
+
+/* edita  o scroll do navegador*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 90px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 90px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
