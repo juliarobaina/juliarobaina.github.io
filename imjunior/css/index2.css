@@ -246,11 +246,6 @@ footer{
 	outline: none;
 }
 
-.fr{/*efeito no nav responsivo*/
-	/*background: #343a40;
-	-moz-background:#343a40;
-	-webkit-background:#343a40;*/
-}
 
 @keyframes deslizar{
 	0%{
@@ -306,8 +301,8 @@ nav a:focus,nav a:active{
 
 	#sss{
 		overflow-y: scroll !important;
-    	overflow-x: hidden;
-    	height: 250px !important;
+    		overflow-x: hidden;
+    		height: 250px !important;
 	}
 
 	#navbarSite ul{
