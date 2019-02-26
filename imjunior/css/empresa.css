@@ -62,4 +62,17 @@ footer{
 #conteudo1-1 h4{
 	border-bottom: 2px dashed #b7e0fb;
 }
+#myCard li{
+cursor: pointer;
+}
+.menu{
+	position: static;
+}
+#conteudo1{
+	margin-top: 50px;
+}
+#botaoResponsivo{
+	margin-right: 30px;
+	padding: 0;
+}
 
