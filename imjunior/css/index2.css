@@ -282,6 +282,11 @@ nav a:focus,nav a:active{
 	margin: 0 auto;
 }
 
+.myCard{
+	cursor:pointer;
+}
+
+
 @keyframes deslizarVertical{
 	from{
 		opacity: 0;
