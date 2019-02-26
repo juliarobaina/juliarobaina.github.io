@@ -1,0 +1,114 @@
+#logo{
+	width: 70px;
+	margin-bottom: -9px;
+}
+nav a:hover{/*Faz parte da logo*/
+	text-decoration: none;
+	color:#007bff;
+}
+#botaoResponsivoMenu img{
+	width: 40px;
+}
+#botaoResponsivoMenu{
+	border: none;
+	padding-right: 30px;
+}
+#botaoResponsivoMenu:focus,#botaoResponsivoMenu:active{
+	outline: none;
+}
+#headerLogo{
+	padding-left: 30px;
+	text-align: center;
+}
+
+.iconMenu{
+	color: #fff;
+}
+
+#navabarSite a{
+	font-family: Arial,Roleway,Sans-serif;
+}
+
+#navbarSite ul{
+	margin: 0 auto;
+	text-align: center;
+}
+nav a:focus,nav a:active{
+	outline: none;
+}
+
+.blocoDrop,.blocoDrop a{
+	color: #fff;
+	border: none;
+}
+.blocoDrop a:hover{
+	background: none;
+	color: #fff;
+	text-decoration: underline;
+}
+
+#sss{
+	margin: 0 auto;
+}
+
+#myCard li{
+cursor: pointer;
+}
+.menu{
+	position: static;
+}
+#conteudo1{
+	margin-top: 50px;
+}
+#botaoResponsivo{
+	margin-right: 30px;
+	padding: 0;
+}
+
+@media(max-width: 767px){
+	.blocoDrop{
+		position: static !important;
+		transform: translate3d(-5px,-5px,0px) !important;
+		text-align: center;
+	}
+
+	#sss{
+		overflow-y: scroll !important;
+    	overflow-x: hidden;
+    	height: 250px !important;
+	}
+
+	#navbarSite ul{
+		font-size: 15px;
+	}
+}
+
+@media(max-width: 991px) and (min-width: 768px){
+	.blocoDrop{
+		transform: translate3d(0px, 58px, 0px) !important;
+	}
+}
+
+/* edita  o scroll do navegador*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 90px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 90px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
