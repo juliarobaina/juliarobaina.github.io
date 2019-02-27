@@ -64,6 +64,10 @@ cursor: pointer;
 	margin-right: 30px;
 	padding: 0;
 }
+#rowMenu{
+	padding:0;
+	margin:0;
+}
 
 @media(max-width: 767px){
 	.blocoDrop{
