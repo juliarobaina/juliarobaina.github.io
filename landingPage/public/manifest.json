@@ -1,0 +1,35 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "./favicon-96x96.png",
+      "sizes": "96x96 64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    
+    {
+      "src": "src/img/minion.jpg",
+      "type": "image/jpg",
+      "sizes": "485x320"
+    },
+
+    {
+      "src": "src/img/minion2.jpg",
+      "type": "image/jpg",
+      "sizes": "493x320"
+    }
+  ],
+  
+  "images":[
+    {
+      "src": "src/img/minion5.jpg",
+      "type": "image/jpg",
+      "sizes": "801x801"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

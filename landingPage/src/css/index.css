@@ -1,0 +1,108 @@
+
+.conteudo{
+    position: relative;
+    display: flexbox;
+    
+ }
+ #title{
+     font-family: 'Fredoka One', cursive;
+ }
+ .container{
+     padding: 0px;
+ }
+ .divForm{
+    
+     display: inline-block;
+     background-color: rgba(245, 223, 21, 0.952);
+     border-radius: 4px;
+ }
+ .bannerDiv{
+     display: inline-block;
+     margin-bottom: 20px;
+     border-radius: 4px;
+ }
+ .separator{
+     display: inline-block;
+ 
+ }
+ #titleForm{
+     padding: 10px;
+     font-family: 'Fredoka One', cursive;
+     margin-top: 14px;
+ }
+ 
+ .titleDiv{
+     margin-top: 60px;
+     margin-bottom: 30px;
+ }
+ 
+ .divForm input[type="radio"] {
+     display:none;
+ }
+ .divForm input + label {
+     display: inline-block;	
+     width: 90px;
+     height: 30px;
+     cursor: pointer;
+ }
+ .divForm input[type="radio"]:checked + label img{
+     border: 3px solid rgb(110, 110, 110);
+     box-shadow: #16171670 2px 3px 4px;
+ }
+ #btnRadioMinion1{
+     padding-right: 15px;
+     margin-bottom: 40px;
+ }
+ 
+ #btnRadioMinion2{
+     padding-bottom: 20px;
+ }
+ 
+ .footer{
+    margin-top: 250px;
+   
+ }
+ .footer .line{
+    margin: 0 auto;
+ }
+
+ .footer h6{
+    border-top: 1px solid rgba(124, 124, 124, 0.575);
+    font-size: larger;
+    font-family: 'Cookie', cursive;
+ }
+ .descricaoProd{
+     margin-top:50px;
+     
+ }
+
+ /*estilo para escolha de quantidade de miniaturas*/
+
+#qtdDiv{
+    margin-top:10px;
+ }
+ .qtdTd{
+    padding: 3px;
+ }
+ #qtdInput{
+    margin: 0 auto;
+    text-align:center;
+ }
+
+ .error{
+    color:red;
+    font-size: 12px;
+ }
+ #btnMinion{
+    font-family: 'Fredoka One', cursive;
+    padding: 15px;
+    font-size: large;
+    border-radius: 2px;
+    text-align: center;
+ }
+
+ @media (max-width: 580px){
+     .bannerDiv{
+         padding: 0;
+     }
+ }
