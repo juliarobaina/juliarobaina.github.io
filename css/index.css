@@ -1,1 +1,28 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+#titlePage{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    border-bottom: 1px dashed #333;
+}
+
+.myCardsOut{
+    padding: 10px;
+}
+
+.myCardsIn{
+    padding: 20px;
+}
+.myCardsIn a{
+    margin-top: 8px;
+    font-weight: bold;
+    font-family: 'Courier Prime', monospace;
+}
+
+.myCardTitle{
+    font-family: 'Courier Prime', monospace;
+}
+
+
 
