@@ -20,12 +20,9 @@
     font-family: 'Courier Prime', monospace;
 }
 
-.myCardsIn h2{
-   font-size: 1.5rem !important;
-}
-
 .myCardTitle{
     font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem !important;
 }
 
 
