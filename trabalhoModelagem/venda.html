@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Bootstrap CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+       
+
+        <script defer src="js/all.js"></script>
+
+        <title>Cadastrar Venda - Ícarus</title>
+    </head>
+    <body>
+        <header class="col-12">
+            <div class="row">
+                <div class="col">
+                    <h1>Í<span>carus</span></h1>
+                </div>
+                <div class="col">
+                    <p>Nome do Funcionário</p>
+                </div>
+
+            </div>      
+        </header>
+        
+        <div class="row">
+            <nav class="col-md-2 col-sm-12">
+                    <ul>
+                        <li><i class=" fas fa-shopping-cart icons"></i><a href="venda.html">Vendas</a></li>
+                        <li><i class=" fas fa-user-tie icons"></i><a href="">Funcionários</a></li>
+                        <li><i class="fas fa-user icons"></i><a href="">Clientes</a></li>
+                        <li><i class="fas fa-plane icons"></i><a href="">Veículos</a></li>
+                        <li><i class=" fas fa-plane-departure icons"></i><a href="">Aeroportos</a></li>
+                        <li><i class=" fas fa-shopping-basket icons"></i><a href="">Produtos</a></li>
+                        
+                    </ul>
+            
+            </nav>
+            <main class="col-md-6 col-sm-10 form" role="main">
+                <form action="/cadastro/cadastrarVenda" method="POST">
+                    <h2>Cadastrar Venda</h2>
+                    <hr>
+                    
+                    
+                        <fieldset>
+                            <legend>Dados do Pagador</legend>
+                            <label for="buscarCliente"></label>
+                            <input class="form-control cpfMask" id="buscarCliente" type="text" name="buscarCliente" 
+                        placeholder="Digite o CPF do cliente">
+                                
+                            <div class="col-md-5 col-sm-5 camposForm">
+                                <i class="fas fa-address-card icons"></i><label for="cpf">CPF</label>
+                                <input id="cpf" class="form-control" type="text" value="" name="cpf" readonly>       
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 camposForm camposFormRight">
+                                <i class="fas fa-address-card icons"></i><label for="rg">RG</label>
+                                <input id="rg" class="form-control" type="text" value="" name="rg" readonly>        
+                            </div>
+                            <div class="col-md-5 col-sm-5 camposForm">
+                                <i class="fas fa-user icons"></i><label for="nome">Nome</label>
+                                <input id="nome" class="form-control" type="text" value="" name="nome" readonly>
+                            </div>
+
+                            <div  class="col-md-5 col-sm-5 camposForm camposFormRight">
+                                <i class="fas fa-map-marker-alt icons"></i><label for="endereco">Endereço</label>
+                                <input id="endereco" class="form-control" type="text" value="" name="endereco" readonly>   
+                            </div>
+                            
+                            <div class="col-md-5 col-sm-5 camposForm">                               
+                               <i class="fas fa-phone-alt icons"></i> <label for="telefone">Telefone</label>
+                                <input id="telefone" class="form-control" type="text" value="" name="telefone" readonly>                              
+                            </div>
+                           
+                        </fieldset>     
+                   
+                        <fieldset>
+                            <legend>Dados do Voo</legend>
+
+                            <div class="col-md-5 col-sm-5 camposForm">
+                                <i class="fas fa-calendar-alt icons"></i><label for="dataEmbarque">Data de Embarque</label>
+                                <input id="dataEmbarque" class="form-control date" type="text" value="" name="dataEmbarque" required>       
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 camposForm camposFormRight">
+                               <i class="fas fa-clock icons"></i> <label for="horaPartida">Hora de Partida</label>
+                                <input id="horaPartida" class="form-control time" type="text" value="" name="horaPartida" required>        
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 camposForm">
+                                <i class=" fas fa-tag icons"></i><label for="tipoVoo">Tipo do Voo</label>
+                                <select class="form-select" name="tipoVoo" id="tipoVoo">
+                                    <option selected>Selecione um tipo de voo</option>
+                                    <option value="Transportepassageiros">Transporte de passageiros</option>
+                                    <option value="Cargasenfermos">Cargas e enfermos</option> 
+                                    <option value="Voopanoramico">Voo panorâmico</option> 
+                                    <option value="LigacoesAereasNaoOferecidas">Ligações aéreas sistemáticas não oferecidas por companhias de aviação comercial</option>
+                                    <option value="paraquedistas">Lançamento de paraquedistas</option>                                
+                                  </select>       
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 camposForm camposFormRight">
+                                <i class="fas fa-plane icons"></i><label for="veiculo">Veículo</label>
+                                <select class="form-select" name="veiculo" id="veiculo">
+                                    <option selected>Selecione um veículo</option>
+                                    <option value="valor1">Valor 1</option>
+                                    <option value="valor2">Valor 2</option>                                  
+                                  </select>         
+                            </div>
+
+                            <div class="col-md-5 col-sm-10 camposForm">
+                                <i class=" fas fa-plane-departure icons"></i><label for="aeroportoOrigem">Aeroporto de Origem</label>
+                                <select class="form-select" name="aeroportoOrigem" id="aeroportoOrigem">
+                                    <option selected>Selecione um aeroporto de origem</option>
+                                    <option value="valor1">Valor 1</option>
+                                    <option value="valor2">Valor 2</option>                                  
+                                  </select>       
+                            </div>
+
+                            <div class="col-md-5 col-sm-10 camposForm camposFormRight">
+                                <i class=" fas fa-plane-arrival icons"></i> <label for="aeroportoDestino">Aeroporto de Destino</label>
+                                <select class="form-select" name="aeroportoDestino" id="aeroportoDestino">
+                                    <option selected>Selecione um aeroporto de destino</option>
+                                    <option value="valor1">Valor 1</option>
+                                    <option value="valor2">Valor 2</option>                                  
+                                  </select>         
+                            </div>
+
+                            
+
+                            <div class="col-md-5 col-sm-5 camposForm">
+                                <i class=" fas fa-users icons"></i><label for="qtdPassageiros"><abbr title="Número">Nº</abbr> de Passageiros</label>
+                                <input id="qtdPassageiros" class="form-control" type="number" value="" name="qtdPassageiros" min="0" required>        
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 camposForm camposFormRight">
+                                <i class=" fas fa-user-tie icons"></i><label for="piloto">Piloto</label>
+                                <select class="form-select" name="piloto" id="piloto">
+                                    <option selected>Selecione um piloto</option>
+                                    <option value="valor1">Valor 1</option>
+                                    <option value="valor2">Valor 2</option>                                  
+                                  </select>         
+                            </div>
+                        </fieldset>
+                   
+                        <fieldset>
+                            <legend>Passageiros</legend>
+                            <label for="buscarClientePassageiros"></label>
+                            <input class="form-control cpfMask" id="buscarClientePassageiros" type="text" name="buscarClientePassageiros" 
+                        placeholder="Digite o CPF do cliente">
+                            <!--<input class="btn btn-primary" type="button" id="btnBuscarCliente" value="Buscar"/>-->
+                        <div class="table-responsive">
+                            <table class="table" summary="Tabela com Passageiros que estarão no voo">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"><i class="fas fa-user icons"></i>Nome</th>
+                                    <th scope="col"><i class="fas fa-address-card icons"></i>RG</th>
+                                    <th scope="col"><i class="fas fa-address-card icons"></i>CPF</th>
+                                    <th scope="col"><i class="fas fa-phone-alt icons"></i>Telefone</th>
+                                    <th scope="col"><i class="fas fa-map-marker-alt icons"></i>Endereço</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row">Nome do Cliente</th>
+                                    <td>12.123.123-1</td>
+                                    <td>123.123.123-12</td>
+                                    <td>(21) 95555-5555</td>
+                                    <td>Rua Kakashi Hatake, nº 7 - Konoha - CEP 763476-34</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                           
+                        </fieldset>
+                   
+                    <fieldset class="col-md-5 camposForm">
+                        <legend>Status da Venda</legend>
+                        <i class=" fas fa-bookmark icons"></i><label for="statusVenda">Status</label>
+                        <select required class="form-select" name="statusVenda" id="statusVenda">
+                            <option selected>Selecione um status</option>
+                            <option value="aguardando">Aguardando</option>
+                            <option value="efetivada">Efetivada</option>
+                            <option value="cancelada">Cancelada</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="col-md-5 camposForm camposFormRight">
+                        <legend>Valor da Venda</legend>
+                        <i class="fas fa-money-bill-alt icons"></i><label for="valorVenda">Valor</label>
+                        <input class="form-control money" type="text" name="valorVenda" id="valorVenda" placeholder="Digite o valor da venda" required>
+                    
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Observações</legend>
+                        <textarea class="form-control col-auto" name="observacoesVenda" id="observacoesVenda" cols="30" rows="6" placeholder="Digite suas observações sobre a venda"></textarea>
+                    </fieldset>
+
+                    <div class="col-md-12" id="btnGroup">
+                        <div class="col-5" id="divVoltar">
+                            <a class="btn btn-outline-primary" href="#" id="voltar">Voltar</a>
+                        </div>
+                        <div class="col-5" id="divBtnCadastrar">
+                            <button type="submit" class="btn btn-primary" id="btnCadastrar">Cadastrar</button>        
+                        </div>
+                        
+                                         
+                    </div>
+                    
+                </form>
+
+                <!-- <div class="col-md-6 text-success bdSucesso" style="display:{{status}}">
+                    <p>Cadastrado com sucesso</p>
+                </div>-->
+               
+                    
+            </main>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.cpfMask').mask('000.000.000-00', {reverse: true});
+                $('.date').mask('00/00/0000');
+                $('.time').mask('00:00');
+                $('.money').mask('000.000.000.000.000,00', {reverse: true});
+            });
+        </script>
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+        
+ 
+    </body>
+</html>
