@@ -51,6 +51,10 @@
                             <label for="buscarCliente"></label>
                             <input class="form-control cpfMask" id="buscarCliente" type="text" name="buscarCliente" 
                         placeholder="Digite o CPF do cliente">
+
+                        <div class="col-md-12 resultadoPesquisa" id="cpf-encontrado">
+                            
+                        </div>
                                 
                             <div class="col-md-5 col-sm-5 camposForm">
                                 <i class="fas fa-address-card icons"></i><label for="cpf">CPF</label>
@@ -112,22 +116,14 @@
                                   </select>         
                             </div>
 
-                            <div class="col-md-5 col-sm-10 camposForm">
+                            <div class="col-md-5 col-sm-10 camposForm">                              
                                 <i class=" fas fa-plane-departure icons"></i><label for="aeroportoOrigem">Aeroporto de Origem</label>
-                                <select class="form-select" name="aeroportoOrigem" id="aeroportoOrigem">
-                                    <option selected>Selecione um aeroporto de origem</option>
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2">Valor 2</option>                                  
-                                  </select>       
+                                <input class="form-control" type="text" name="aeroportoOrigem" id="aeroportoOrigem" placeholder="Digite o nome do aeroporto">       
                             </div>
 
                             <div class="col-md-5 col-sm-10 camposForm camposFormRight">
                                 <i class=" fas fa-plane-arrival icons"></i> <label for="aeroportoDestino">Aeroporto de Destino</label>
-                                <select class="form-select" name="aeroportoDestino" id="aeroportoDestino">
-                                    <option selected>Selecione um aeroporto de destino</option>
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2">Valor 2</option>                                  
-                                  </select>         
+                                <input class="form-control" type="text" name="aeroportoDestino" id="aeroportoDestino" placeholder="Digite o nome do aeroporto">        
                             </div>
 
                             
@@ -139,11 +135,7 @@
 
                             <div class="col-md-5 col-sm-5 camposForm camposFormRight">
                                 <i class=" fas fa-user-tie icons"></i><label for="piloto">Piloto</label>
-                                <select class="form-select" name="piloto" id="piloto">
-                                    <option selected>Selecione um piloto</option>
-                                    <option value="valor1">Valor 1</option>
-                                    <option value="valor2">Valor 2</option>                                  
-                                  </select>         
+                                <input class="form-control" type="text" name="piloto" id="piloto" placeholder="Digite o nome do piloto">             
                             </div>
                         </fieldset>
                    
@@ -152,16 +144,20 @@
                             <label for="buscarClientePassageiros"></label>
                             <input class="form-control cpfMask" id="buscarClientePassageiros" type="text" name="buscarClientePassageiros" 
                         placeholder="Digite o CPF do cliente">
-                            <!--<input class="btn btn-primary" type="button" id="btnBuscarCliente" value="Buscar"/>-->
+                        <div class="col-md-12 resultadoPesquisa" id="cpf-encontrado">
+                            <p>José Alecrim</p>
+                        </div>
+                           
                         <div class="table-responsive">
                             <table class="table" summary="Tabela com Passageiros que estarão no voo">
                                 <thead>
                                   <tr>
-                                    <th scope="col"><i class="fas fa-user icons"></i>Nome</th>
-                                    <th scope="col"><i class="fas fa-address-card icons"></i>RG</th>
-                                    <th scope="col"><i class="fas fa-address-card icons"></i>CPF</th>
-                                    <th scope="col"><i class="fas fa-phone-alt icons"></i>Telefone</th>
-                                    <th scope="col"><i class="fas fa-map-marker-alt icons"></i>Endereço</th>
+                                    <th scope="col"><i class="fas fa-user iconsNew"></i><spam class="spanInTable">Nome</spam></th>
+                                    <th scope="col"><i class="fas fa-address-card iconsNew"></i><spam class="spanInTable">RG</spam></th>
+                                    <th scope="col"><i class="fas fa-address-card iconsNew"></i><spam class="spanInTable">CPF</spam></th>
+                                    <th scope="col"><i class="fas fa-phone-alt iconsNew"></i><spam class="spanInTable">Telefone</spam></th>
+                                    <th scope="col"><i class="fas fa-map-marker-alt iconsNew"></i><spam class="spanInTable">Endereço</spam></th>
+                                    <th scope="col"><i class="fas fa-trash iconsNew"></i><spam class="spanInTable">Remover</spam></th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -171,34 +167,19 @@
                                     <td>123.123.123-12</td>
                                     <td>(21) 95555-5555</td>
                                     <td>Rua Kakashi Hatake, nº 7 - Konoha - CEP 763476-34</td>
+                                    <td><i class="fas fa-times-circle" aria-label="Opção para remover o passageiro" id="removeSimbolo"></i></td>
                                   </tr>
                                 </tbody>
                               </table>
                         </div>
                            
                         </fieldset>
-                   
-                    <fieldset class="col-md-5 camposForm">
-                        <legend>Status da Venda</legend>
-                        <i class=" fas fa-bookmark icons"></i><label for="statusVenda">Status</label>
-                        <select required class="form-select" name="statusVenda" id="statusVenda">
-                            <option selected>Selecione um status</option>
-                            <option value="aguardando">Aguardando</option>
-                            <option value="efetivada">Efetivada</option>
-                            <option value="cancelada">Cancelada</option>
-                        </select>
-                    </fieldset>
 
-                    <fieldset class="col-md-5 camposForm camposFormRight">
+                    <fieldset class="col-md-5 camposForm">
                         <legend>Valor da Venda</legend>
                         <i class="fas fa-money-bill-alt icons"></i><label for="valorVenda">Valor</label>
                         <input class="form-control money" type="text" name="valorVenda" id="valorVenda" placeholder="Digite o valor da venda" required>
                     
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Observações</legend>
-                        <textarea class="form-control col-auto" name="observacoesVenda" id="observacoesVenda" cols="30" rows="6" placeholder="Digite suas observações sobre a venda"></textarea>
                     </fieldset>
 
                     <div class="col-md-12" id="btnGroup">
