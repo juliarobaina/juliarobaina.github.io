@@ -29,6 +29,16 @@ h1 span{
     color: #cfe2ff;
 }
 
+.resultadoPesquisa{
+    box-shadow: -1px 0px 9px 0px #00000026;
+    border-radius: 4px;
+    margin-top: 0.8px;
+}
+
+.resultadoPesquisa p{
+    padding: 2%;
+}
+
 nav{
     background:#cfe2ff;
     padding: 0px;
@@ -122,8 +132,28 @@ table{
     margin-top: 2%;
 }
 
-@media (max-width: 800px)
-{
+.spanInTable{
+    display: block;
+    text-align: center;
+}
+
+.iconsNew{
+    display: block;
+    margin: 0 auto;
+}
+
+#removeSimbolo{
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+#cpf-encontrado{
+    display: none;
+}
+
+@media (max-width: 800px){
     .camposFormRight{
         float: none;
     }
