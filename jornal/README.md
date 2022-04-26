@@ -1,0 +1,2 @@
+#Página web seguindo o layout do site do jornal El País
+<p>Essa página web foi desenvolvida com o objetivo de praticar os conceitos de display flex e grid. O layout aqui aplicado segue como base o que é utilizado pelo site do jornal El País.</p>
