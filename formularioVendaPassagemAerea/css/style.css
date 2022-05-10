@@ -7,22 +7,60 @@
 header{
     background-color: #031633;
     color: #fff; 
-    padding: 8px;
+    padding: .8rem .8rem 0 .8rem;
     box-shadow: -1px 2px 9px 0px #00000040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header p{
-    text-align: right;
-    padding-top: 2%;
+    padding-top: 8px;
 }
 
 .row{
     margin: 0px !important;
+ 
+}
+
+#menu-form{
+    padding: 1rem;
 }
 
 h1{
-    font-size: 30px !important;
-    padding-top: 1%;
+    font-size: 1.875rem !important;
+  
+}
+
+h1 a, h1 a:hover{
+    color: #fff;
+    text-decoration: none;
+  
+}
+h1 a:focus-visible{
+    outline: none;
+    border:2px double #cfe2ff;
+    padding: 2px 0;
+    border-radius: 2px;
+}
+
+header p:focus-visible{
+    outline: none;
+    border:2px double #cfe2ff;
+    border-radius: 2px;
+    padding-top: 6.4px;
+}
+
+#label-menu{
+    font-size: 0;
+    display: none;
+}
+
+nav ul li a:focus-visible{
+    border: 2px double #cfe2ff;
+    padding: 0 2px;
+    border-radius: 2px;
+    outline: none;
 }
 
 h1 span{
@@ -40,31 +78,33 @@ h1 span{
 }
 
 nav{
-    background:#cfe2ff;
-    padding: 0px;
-    opacity: 0.8 !important;
-    box-shadow: -1px 2px 9px 0px #00000040;
+  padding-top: 8px;
+  width: 62%;
 }
 
 nav ul{
-    margin-top: 5%;
-    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 nav ul li{
     list-style: none;
-    padding-top: 15%;
 }
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-weight: bold;
-    padding-left: 4%;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 nav ul li a:hover{
-    text-decoration: underline #031633;
-    color: #000;
+    text-decoration: underline #ffffff;
+    color: #fff;
+    
+}
+
+#btn-menu{
+    display: none;
 }
 
 main{
@@ -83,6 +123,11 @@ main{
     float: right;
 }
 
+form input:focus-visible, form select:focus-visible{
+    border-color: #031633 !important;
+    box-shadow: 0 0 0 0.15rem rgb(3, 22, 51) !important;
+}
+
 .icons{
     margin-right: 1%;
 }
@@ -91,12 +136,30 @@ fieldset legend{
     margin-top: 3%;
 }
 
+#tabelaResponsiva:focus-visible{
+    outline: 2px double #031633;
+    
+}
+
+#voltar:focus-visible{
+    box-shadow: 0 0 0 0.15rem rgb(3, 22, 51) !important;
+}   
+
+
 fieldset textarea{
     resize: none;
 }
 
 #btnCadastrar{
+    border-color: #031633;
     background-color: #031633 !important;
+}
+#btnCadastrar:focus-visible{
+    box-shadow: inset 0 0 0 0.15rem rgb(207, 226, 255) !important;
+}
+
+.form-control:disabled:focus-visible, .form-control[readonly]:focus-visible{
+    box-shadow: inset 0 0 0 0.15rem rgb(207, 226, 255) !important;
 }
 
 .btn-outline-primary{
@@ -110,22 +173,24 @@ fieldset textarea{
 }
 
 #btnGroup{
-    margin-top: 3%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#divBtnCadastrar{
-    display: inline-block;
-    float: right;
-    text-align: right;
-}
 
-#divVoltar{
-    display: inline-block;
+#btnCadastrar, #voltar{
+  width: 8em;
+}
+#btnCadastrar:focus, #voltar:focus{
+    box-shadow: none;
 }
 
 .form-control:disabled, .form-control[readonly]{
-    background-color: #cfe2ff !important;
-    opacity: 0.8 !important;
+    background-color: #031633 !important;
+    opacity: 0.9 !important;
 }
 
 table{
@@ -157,4 +222,88 @@ table{
     .camposFormRight{
         float: none;
     }
+}
+
+@media (max-width: 480px){
+    #btnCadastrar, #voltar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+
+        100% { opacity: 1; } 
+    }
+
+    header{
+        display: grid;
+        grid-template-areas: "logo funcionario menu";
+    }
+    #btn-menu:checked ~ nav{
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+    }
+    #btn-menu{
+        appearance: none;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+        grid-area: menu;
+        display: block;
+        margin-top: -6px;
+        color: #fff;
+    }
+    #btn-menu:after{
+        content: "\2630";
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #btn-menu:focus-visible{
+        outline: 2px double #cfe2ff;
+        height: min-content;
+        margin-top: -6px;
+        padding: 0 2px;
+    }
+
+    nav{
+        position: absolute;
+        background: #031633;
+        left: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        
+    }
+    nav ul{
+        flex-direction: column !important;
+        display: flex;
+        align-items: center;
+        padding-top: 4rem;
+        gap: 1.8rem;
+    }
+
+    header{
+        position: relative;
+        z-index: 100;
+    }
+
+    h1{
+        position: relative;
+        z-index: 20;
+        grid-area: logo;
+    }
+
+    header p{
+        position: relative;
+        z-index: 20;
+        grid-area: funcionario;
+    }
+
+    #label-menu{
+        display: block;
+    }
+
 }
