@@ -178,6 +178,9 @@ fieldset textarea{
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
+    -webkit-gap: 1.25rem;
+    -moz-gap: 1.25rem;
+    -o-gap: 1.25rem;
 }
 
 
