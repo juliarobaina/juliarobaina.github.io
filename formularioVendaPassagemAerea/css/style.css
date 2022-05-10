@@ -47,6 +47,8 @@ h1 a:focus-visible{
 header p:focus-visible{
     outline: none;
     border:2px double #cfe2ff;
+    -webkit-outline: none;
+    -webkit-border:2px double #cfe2ff;
     border-radius: 2px;
     padding-top: 6.4px;
 }
