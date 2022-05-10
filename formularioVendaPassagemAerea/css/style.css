@@ -177,7 +177,7 @@ fieldset textarea{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 
