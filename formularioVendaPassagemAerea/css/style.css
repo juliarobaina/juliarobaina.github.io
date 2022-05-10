@@ -248,6 +248,9 @@ table{
     }
     #btn-menu{
         appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
         position: relative;
         z-index: 100;
         cursor: pointer;
