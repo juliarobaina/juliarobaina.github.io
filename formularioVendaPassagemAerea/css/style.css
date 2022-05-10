@@ -49,6 +49,10 @@ header p:focus-visible{
     border:2px double #cfe2ff;
     -webkit-outline: none;
     -webkit-border:2px double #cfe2ff;
+    -moz-outline: none;
+    -moz-border:2px double #cfe2ff;
+    -o-outline: none;
+    -o-border:2px double #cfe2ff;
     border-radius: 2px;
     padding-top: 6.4px;
 }
