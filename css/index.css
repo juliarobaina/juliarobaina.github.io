@@ -1,30 +1,46 @@
-*{margin: 0px; padding: 0px; box-sizing: border-box;}
-
-#titlePage{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-family: 'Merriweather', serif;
-    border-bottom: 1px dashed #333;
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+body{
+    background-color: #232323;
+    
+}
+header h1{
+color: #15ea06;
+}
+header p{
+color: #fff;
+margin-top: .5rem;
+}
+section h2{
+color: #e6ea06;
+}
+section p a{
+color: #00dbd8;
+text-decoration: none;
+}
+#setores{
+margin-top: 2rem;
+display: grid;
+grid-template-columns: repeat(2,1fr);
 }
 
-.myCardsOut{
-    padding: 10px;
+#container{
+padding: 5rem;
+}
+.itens-setores{
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: .5rem;
+}
+span{
+color: #c2c2c2;
+}
+footer p{
+color: white;
+display: inline-block;
+padding: 2rem 1rem 2rem 0rem;
 }
 
-.myCardsIn{
-    padding: 20px;
-}
-.myCardsIn a{
-    margin-top: 8px;
-    font-weight: bold;
-    font-family: 'Courier Prime', monospace;
-}
-
-.myCardTitle{
-    font-family: 'Courier Prime', monospace;
-    font-size: 1.5rem !important;
-}
-
-.middleCard{
-    height: 100%;
+svg{
+width: 2rem;
 }
