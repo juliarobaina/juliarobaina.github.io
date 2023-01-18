@@ -4,43 +4,47 @@ body{
     
 }
 header h1{
-color: #15ea06;
+    color: #15ea06;
 }
 header p{
-color: #fff;
-margin-top: .5rem;
+    color: #fff;
+    margin-top: .5rem;
 }
 section h2{
-color: #e6ea06;
+    color: #e6ea06;
 }
 section p a{
-color: #00dbd8;
-text-decoration: none;
+    color: #00dbd8;
+    text-decoration: none;
 }
 #setores{
-margin-top: 2rem;
-display: grid;
-grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
 }
 
 #container{
-padding: 5rem;
+    padding: 5rem;
 }
 .itens-setores{
-display: flex;
-gap: 1rem;
-flex-wrap: wrap;
-margin-top: .5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
 }
 span{
-color: #c2c2c2;
+    color: #c2c2c2;
 }
 footer p{
-color: white;
-display: inline-block;
-padding: 2rem 1rem 2rem 0rem;
+    color: white;
+    display: inline-block;
+    padding: 2rem 1rem 2rem 0rem;
 }
 
 svg{
-width: 2rem;
+    width: 2rem;
+}
+
+a:focus{
+    outline: 2px #e6ea06 dashed;
+    display: block;
+    padding: 0 2px;
 }
