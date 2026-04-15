@@ -1,0 +1,361 @@
+#conteudo1{
+	background:#011c38;
+	color: #fff;
+}
+#logo{
+	width: 70px;
+	margin-bottom: -9px;
+}
+#iconMenu{
+	color: #fff;
+}
+nav a:hover{/*Faz parte da logo*/
+	text-decoration: none;
+	color:#007bff;
+}
+#esfumacada{
+	background: rgb(0, 0, 0);width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+}
+.ful{
+	width: 100%;
+	height: 100vh; /* dimensiona o slider à altura do viewport */
+}
+.blocoDrop{
+	background: none;
+	border: none;
+}
+.blocoDrop a{
+	color: #fff;
+}
+.blocoDrop a:hover{
+	background: none;
+	color: #fff;
+	text-decoration: underline;
+}
+#navbarSite ul{
+	margin:0 auto;
+	text-align: center;
+	font-size: 17px;
+}
+#headerLogo{
+	padding-left: 30px;
+	text-align: center;
+}
+#botaoResponsivoMenu{
+	border: none;
+	padding-right: 30px;
+}
+#botaoResponsivoMenu img{
+	width: 40px;
+}
+#navabarSite a{
+	font-family: Arial,Roleway,Sans-serif;
+}
+
+.iconMenu{
+	color: #fff;
+}
+#a1,#a2,#a3,#a4,#a5,#a6{
+	animation-name: deslizar;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease;
+	-moz-animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	visibility: hidden;
+}
+#a1{
+	visibility: visible;
+}
+#a2{
+	animation-delay:0.3s;
+	visibility: visible;
+
+}
+#a3{
+	animation-delay:0.6s;
+	visibility: visible;
+}
+#a4{
+	animation-delay:0.9s;
+	visibility: visible;
+}
+#a5{
+	animation-delay:1.2s;
+	visibility: visible;
+}
+#a6{
+	animation-delay:1.5s;
+	visibility: visible;
+}
+
+#textoSlide{
+	top: 59%;
+	font-size: x-large;
+	animation-name: deslizarVertical;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+.skewNegative{
+	background-color: #ff5555;
+	-webkit-transform: skew(-10deg); /* Chrome, Opera */
+    -ms-transform: skew(-10deg); /* IE */
+    transform: skew(-10deg); /* Padrão */
+}
+
+.conteudo1P{
+	-webkit-font-family: Courier;
+	-moz-font-family: Courier;
+	font-family: Courier;
+}
+
+#conteudoDiv{
+	margin: 0 auto;
+}
+
+#conteudo2{
+	background-image: url("../img/blur2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	padding: 0px;
+	margin: 0px;
+}
+#conteudo2 .row{
+	padding: 0px;
+	margin: 0px;
+}
+#conteudo2 .backCard{
+	margin: 0 auto;
+}
+#conteudo2 .card-body{
+	font-family: Arial,Roleway,Sans-serif;
+	-moz-font-family:Arial,Roleway,Sans-serif;
+	-webkit-font-family:Arial,Roleway,Sans-serif;
+	color: #fff;
+}
+
+.myCard{
+	border: none;
+	background: none;
+}
+.myCard:hover{
+	box-shadow:0px 0px 13px #efefef;
+	
+}
+.myCard i{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.myCard:hover i{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.cardOutside:hover{
+	margin-top: -1px;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	transition-delay: 0s;
+	perspective: 600;
+	transform-style: preserve-3d;
+	 transform: translateZ(100px);
+}
+.myCard .card-head{
+	margin: 0 auto;
+}
+
+#conteudo2 i{
+	color: #2955a5;
+}
+
+#conteudo2 h4{
+	font-family: Arial,Roleway,Sans-serif;
+	-moz-font-family:Arial,Roleway,Sans-serif;
+	-webkit-font-family:Arial,Roleway,Sans-serif;
+}
+
+#conteudo3{
+	font-family: Arial,Roleway,Sans-serif;
+	-moz-font-family:Arial,Roleway,Sans-serif;
+	-webkit-font-family: Arial,Roleway,Sans-serif; 
+	font-size: 18px;
+}
+#conteudo3Inner{
+	margin: 0 auto;
+	width: 50%;
+}
+#conteudo3 .feitoPor{
+	position: relative !important;
+	width: 57%;
+	color: #000;
+}
+#btnContato{
+	padding: 9px;
+    border-radius: 5px;
+    /*background-image: url("../img/6.jpg");
+    background-size: 100%;*/
+    background-color: #4faeed;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 2px #8d8d8d;
+}
+#conteudo3 span{
+	width: 29%;
+	height: 30%;
+	background-color: #4faeed !important;
+	box-shadow: 0px 0px 2px #8d8d8d;
+}
+#conteudo3 a{
+	margin-top: -38px;
+}
+#conteudo3 p a{
+	background-color: #94d6f6;
+	font-family: Arial,Roleway,Sans-serif;
+	-moz-font-family: Arial,Roleway,Sans-serif;
+	-webkit-font-family:Arial,Roleway,Sans-serif;
+	
+}
+#conteudo3 p a:hover{
+	background-color: #4faeed;
+	text-decoration: none;
+}
+footer{
+	background-color: #011c38;
+	color: #fff;
+	border-top: 6px solid #dfb372;
+	font-family: Courier;
+	-moz-font-family: Courier;
+	-webkit-font-family:Courier;
+	font-size: 15px;
+}
+
+#navbarSite li:focus{
+	border: none !important;
+	text-decoration: none !important;
+}
+
+#botaoResponsivoMenu:focus,#botaoResponsivoMenu:active{
+	outline: none;
+}
+
+
+@keyframes deslizar{
+	0%{
+		opacity: 0;
+		transform: translateX(-28px);
+	}
+	25%{
+		opacity: 0.4
+		transform: translateX(-18px);
+		visibility: visible;
+
+	}50%{
+		opacity: 0.8
+		transform: translateX(-8px);
+		visibility: visible;
+
+	}100%{
+		opacity: 1;
+		transform: translateX(0px);
+		visibility: visible;
+	}
+}
+
+#face{
+	color: #fff;
+}
+#face:hover{
+	text-decoration: none;
+}
+nav a:focus,nav a:active{
+	outline: none;
+}
+#sss{
+	margin: 0 auto;
+}
+
+.myCard{
+	cursor:pointer;
+}
+
+
+@keyframes deslizarVertical{
+	from{
+		opacity: 0;
+		transform: translateY(-10px);
+	}to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media(max-width: 767px){
+	.blocoDrop{
+		position: static !important;
+		transform: translate3d(-5px,-5px,0px) !important;
+		text-align: center;
+	}
+
+	#sss{
+		overflow-y: scroll !important;
+    		overflow-x: hidden;
+    		height: 250px !important;
+	}
+
+	#navbarSite ul{
+		font-size: 15px;
+	}
+	
+}
+
+@media(min-width: 991px){
+	.blocoDrop{
+		transform: translate3d(0px, 58px, 0px) !important;
+	}
+	
+}
+
+/* edita  o scroll do navegador*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 90px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 90px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
